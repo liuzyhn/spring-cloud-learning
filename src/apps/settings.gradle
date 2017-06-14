@@ -1,25 +1,22 @@
-// def PROJECT = project(':').projectDir
-// def PROJECTS = [PROJECT] as Set
+def PROJECT = project(':').projectDir
+def PROJECTS = [PROJECT] as Set
 
-// def filter = {file ->
-//   file.isDirectory() && 
-//   file.name.charAt(0) != '.' && 
-//   file.name != 'scripts' && 
-//   file.name != 'RemoteSystemsTempFiles' && 
-//   file.name != 'Servers'
-// } as FileFilter
+def filter = {file ->
+  file.isDirectory() && 
+  file.name.charAt(0) != '.' && 
+  file.name != 'scripts' && 
+  file.name != 'RemoteSystemsTempFiles' && 
+  file.name != 'Servers'
+} as FileFilter
 
-// def projectDirList = []
+def projectDirList = []
 
-// PROJECTS.each {
-//   projectDirList.addAll it.listFiles(filter)
-// }
+PROJECTS.each {
+  projectDirList.addAll it.listFiles(filter)
+}
 
-// include(projectDirList*.name as String[])
+include(projectDirList*.name as String[])
 
-// projectDirList.each { dir ->
-//   project(":$dir.name").projectDir = dir
-// }
-
-include 'discovery'
-include 'person'
+projectDirList.each { dir ->
+  project(":$dir.name").projectDir = dir
+}

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Configuration xmlns:xi="http://www.w3.org/2001/XInclude" status="WARN">
   <Properties>
-    <Property name="APPNAME">discovery</Property>
+    <Property name="APPNAME">feign</Property>
     <Property name="LOGSDIR">var/log/zkbc</Property>
     <Property name="PATTERN_LAYOUT">[%-5p] %d{yyyy-MM-dd HH:mm:ss.SSS}(%t:%c): %m%n</Property>
   </Properties>
