@@ -1,0 +1,7 @@
+//Discovery (Eureka Server)
+
+dependencies {
+  compile "org.springframework.cloud:spring-cloud-starter-eureka-server"
+
+  testCompile configurations.jdbc
+}

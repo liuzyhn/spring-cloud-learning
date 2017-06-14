@@ -1,0 +1,10 @@
+#!/bin/sh
+
+JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+
+GRADLE_HOME=/usr/local/gradle/gradle-2.14
+ECLIPSE_HOME=/usr/local/eclipse/Eclipse-jee.app/Contents/MacOS
+
+PATH=$JAVA_HOME/bin:$GRADLE_HOME/bin:$PATH
+
+export JAVA_HOME GRADLE_HOME ECLIPSE_HOME

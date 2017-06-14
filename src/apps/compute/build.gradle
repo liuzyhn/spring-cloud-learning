@@ -1,0 +1,7 @@
+//Person
+
+dependencies {
+  compile "org.springframework.cloud:spring-cloud-starter-eureka"
+
+  testCompile configurations.jdbc
+}
