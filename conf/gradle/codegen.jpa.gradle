@@ -24,7 +24,7 @@ subprojects {
   }
 
   task cleanJpaMetamodel(type: Delete) {
-    delete 'src/metamodel/java'
+    delete 'src/metamodel/java/*'
   }
 
   task generateJpaMetamodel(type: JavaCompile) {

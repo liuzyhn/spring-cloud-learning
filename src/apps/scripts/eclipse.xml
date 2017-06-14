@@ -8,6 +8,6 @@
       </classpath>
     </taskdef>
 
-    <iep locations="${env.PRGDIR},${env.PRGDIR}/../base,${env.PRGDIR}/../apis" excludes="mmc,remotesystemstempfiles,scripts,servers" />
+    <iep locations="${env.PRGDIR},${env.PRGDIR}/../apps" excludes="remotesystemstempfiles,scripts,servers" />
   </target>
 </project>
