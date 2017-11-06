@@ -1,8 +1,7 @@
 project.ext {
   GLOBAL.lib = new File(GLOBAL.root, 'lib')
   GLOBAL.src = new File(GLOBAL.root, 'src')
-  //GLOBAL.repositoriesRoot = 'http://maven.aliyun.com/nexus/content'
-  GLOBAL.repositoriesRoot = 'http://182.92.165.97:8081/nexus/content'
+  GLOBAL.repositoriesRoot = 'http://maven.aliyun.com/nexus/content'
   GLOBAL.jdbcDrivers = [
     h2: "com.h2database:h2:1.3.171",
     mysql: "mysql:mysql-connector-java:5.1.38",
