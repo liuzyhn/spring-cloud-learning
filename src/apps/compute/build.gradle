@@ -2,6 +2,5 @@
 
 dependencies {
   compile "org.springframework.cloud:spring-cloud-starter-eureka"
-
-  testCompile configurations.jdbc
+  compile "org.springframework.cloud:spring-cloud-starter-config"
 }

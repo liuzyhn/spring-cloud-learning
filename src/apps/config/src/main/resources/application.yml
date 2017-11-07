@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      label: master
+      server:
+        git:
+          uri: https://gitee.com/liuzyhn/config-demo/
+#          searchPaths: 
+#          username: 
+#          password: 
+server:
+  port: 1201
